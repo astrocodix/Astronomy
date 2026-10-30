@@ -4,8 +4,9 @@ on:
   push:
     branches:
       - main
-      # Allow the initial Pages publication from this working branch before it is merged.
-      - arena/693f27af-astronomy
+  pull_request:
+    branches:
+      - main
   workflow_dispatch:
 
 permissions:
@@ -43,10 +44,12 @@ jobs:
           NEXT_PUBLIC_BASE_PATH: ${{ steps.pages.outputs.base_path }}
           NEXT_PUBLIC_REPOSITORY_URL: ${{ github.server_url }}/${{ github.repository }}
       - name: Upload the static site
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
         uses: actions/upload-pages-artifact@v3
         with:
           path: github-pages/out
   deploy:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
     needs: build
     runs-on: ubuntu-latest
     timeout-minutes: 10
