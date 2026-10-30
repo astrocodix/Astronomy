@@ -1,5 +1,19 @@
 # Verification and reproducible testing
 
+## GitHub Pages static edition
+
+These checks operate on the separate static export and do **not** need a database, credentials, or the full application test server. Test both the repository subpath and any domain-root deployment relevant to your Pages configuration:
+
+```bash
+npm ci
+NEXT_PUBLIC_BASE_PATH=/Astronomy npm run pages:build
+NEXT_PUBLIC_BASE_PATH=/Astronomy npm run test:pages
+# Once Chromium and its platform libraries are installed:
+NEXT_PUBLIC_BASE_PATH=/Astronomy npm run test:pages:browser
+```
+
+The first test checks the exported routes, asset prefixes, review notices and availability of the 12 stages and 16 lessons. The browser suite serves the actual export on a local test port, exercises deep links/reloads, local reading marks, search, English/Arabic and RTL, themes, mobile navigation and observatory controls, and samples automated accessibility checks. It does not certify accessibility or test the unavailable server features. Repeat with an empty prefix when deploying at the origin root. The Pages workflow runs the build and file-level checks; the browser suite can be run separately.
+
 ## Use an isolated development checkout
 
 Tests create synthetic learners, scores, approvals and certificates **only in disposable databases**. These are software fixtures, not student activity or scientific approvals. Do not run the browser or PostgreSQL smoke suite against a live learner database. Stop application writers before making a SQLite fixture copy.

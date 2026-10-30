@@ -1,12 +1,22 @@
 # Installation, deployment and operations
 
+## GitHub Pages: static preview
+
+The separate `github-pages/` app exports a static, bilingual learning preview and can be hosted by GitHub Pages without a database or server secrets. It is **not a deployment of the full application**: accounts, cross-device progress, assessments, certificates, the AI tutor, uploads and the content studio require the Node server and database described below. Reading marks are ungraded, browser-local convenience markers. The export uses the versioned seed content, not the mutable live database.
+
+Stage 1 is an explicitly labelled, unreviewed pilot; stages 2–12 are curriculum outlines. The preview is public when deployed but sets `noindex` and does not replace independent scientific, Arabic, and media-rights review before a reviewed launch. GitHub Pages does not apply the full Node app's custom security headers; do not store secrets or private learner data in the export.
+
+In repository settings, select **Pages → Build and deployment → GitHub Actions**. `.github/workflows/pages.yml` builds with Node 22, uses the Pages configuration action's base path (e.g. `/Astronomy` for this repository, empty for a custom domain or user site), tests the exported files, and deploys the artifact. The workflow runs for `main` and the initial Arena working branch; remove the latter trigger if it is no longer needed after merging. The site URL for this repository is expected to be <https://astrocodix.github.io/Astronomy/>; confirm the actual URL and successful run in the Pages settings and Actions tab. A repository environment or organization policy may require approval before deployment.
+
+For an isolated local check, use `NEXT_PUBLIC_BASE_PATH=/Astronomy npm run pages:build`, then `NEXT_PUBLIC_BASE_PATH=/Astronomy npm run pages:serve`. Open `/Astronomy/` on port 4173. Use the same prefix when running the Pages tests; an empty prefix is valid for a domain-root site. The full-app instructions below are unchanged.
+
 ## 1. Choose a database and hosting model
 
 **Recommended public deployment:** a maintained Node.js runtime (22 LTS recommended), PostgreSQL, HTTPS reverse proxy, persistent writable media volume, secret manager, monitoring and encrypted off-host backups.
 
 SQLite is supplied for convenient local development and a small single-process pilot. Do not use a local SQLite file across multiple independent application instances. Do not deploy mutable SQLite or uploaded files onto an ephemeral/serverless filesystem and assume they will persist.
 
-The application is a Next.js **Node server**, not a static export. It needs database access and filesystem access to `storage/uploads/`. The AI endpoint streams responses; avoid a proxy/function timeout shorter than the configured upstream timeout.
+The full application is a Next.js **Node server**, not a static export. It needs database access and filesystem access to `storage/uploads/`. The AI endpoint streams responses; avoid a proxy/function timeout shorter than the configured upstream timeout.
 
 ### Local SQLite
 

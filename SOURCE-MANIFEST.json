@@ -1,6 +1,6 @@
 {
   "project": "ASTROVERSE ACADEMY",
-  "createdAt": "2026-10-30T09:03:31.929978+00:00",
+  "createdAt": "2026-10-30T09:53:11.702751+00:00",
   "scope": "Source, authored pilot, cached media/fonts, docs and scoped verification evidence. No credentials, learner database, backups, runtime uploads, dependencies or build output.",
   "files": [
     {
@@ -9,14 +9,19 @@
       "sha256": "669fa918e2fa9dda9c954a69b24e6508a31a3814fcc87211cd84e4b1f7267348"
     },
     {
+      "path": ".github/workflows/pages.yml",
+      "bytes": 1545,
+      "sha256": "233a7391d5e8719c938a1b0381fbdd76948323a57679234012079b42c9f460a2"
+    },
+    {
       "path": ".gitignore",
-      "bytes": 185,
-      "sha256": "2eef9d6f9fecdd28182c993169eccc9be4e4ce54ab101e900e043c95259805e9"
+      "bytes": 279,
+      "sha256": "8ff5e27097e0e0da040266ab767a7921a1fce351e35d118468b00b14cf043267"
     },
     {
       "path": ".prettierignore",
-      "bytes": 248,
-      "sha256": "cf0c7fc610592d7b9f8c327e99189019be0d31df0ce03c0f5bb93ad521d12ebe"
+      "bytes": 315,
+      "sha256": "e4470137e671949d9e5918dd3cebd5222cf254637e7dd8afc29f8b11af48549f"
     },
     {
       "path": ".prettierrc.json",
@@ -25,8 +30,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 10979,
-      "sha256": "ec275e45e79f14c1f07019d358296a430d5ab2ffd30a608e6ab94b7d1a5ce70d"
+      "bytes": 13474,
+      "sha256": "b06d1a396841898ae47526c3c8b511c7cd1d9ed04fe7de93f964e90a7eb1df0a"
     },
     {
       "path": "docs/CONTENT.md",
@@ -35,8 +40,8 @@
     },
     {
       "path": "docs/DEPLOYMENT.md",
-      "bytes": 11650,
-      "sha256": "31a3df075c95a7cb435c3b73bc5bac529ff1191745bfca23f84ddc9292eb55bf"
+      "bytes": 13618,
+      "sha256": "7d740525d0b5adb73500aa7823d4cd59c5c385bb99cc7a42cec044affcaebbd3"
     },
     {
       "path": "docs/SECURITY.md",
@@ -55,8 +60,8 @@
     },
     {
       "path": "docs/TESTING.md",
-      "bytes": 10733,
-      "sha256": "99291dbaa1c96ef31105e5871029af5d94a52f3c7c07f860872c61a5a0fa6a96"
+      "bytes": 11849,
+      "sha256": "1839ac3b60b6c722917f50f7144a66a6476c245c9b3fea6c702d06f5c8b4eb85"
     },
     {
       "path": "docs/additional-source-link-audit.json",
@@ -89,6 +94,121 @@
       "sha256": "e361519bf431f18a40cad5fe274e3a5f36de304dc0fc1791cf505929e61d3bad"
     },
     {
+      "path": "github-pages/app/about/page.tsx",
+      "bytes": 208,
+      "sha256": "0bd03b78a77193e161fc7353ae8060ae7c856919fc8a832c3c4fdbb9808061fa"
+    },
+    {
+      "path": "github-pages/app/layout.tsx",
+      "bytes": 2334,
+      "sha256": "6f169919dbe1709de36787521a77c2f8d991327208360c7822ecb684463fc186"
+    },
+    {
+      "path": "github-pages/app/lesson/[id]/page.tsx",
+      "bytes": 1769,
+      "sha256": "eafeecdff1ba733d9f6ee3fc31f1644f5a0de5b46e0bfac6971f5a24a84d2e47"
+    },
+    {
+      "path": "github-pages/app/library/page.tsx",
+      "bytes": 214,
+      "sha256": "cd56434a4aedd3a3f8fe500f983ee69200eae44a0bd9fb0c3c1dfb841749d933"
+    },
+    {
+      "path": "github-pages/app/not-found.tsx",
+      "bytes": 375,
+      "sha256": "22c39738f738fe4681b3374ed9a7ea48a984468ef62ecc40282afb13fdec2d08"
+    },
+    {
+      "path": "github-pages/app/observatory/page.tsx",
+      "bytes": 232,
+      "sha256": "e6922061c70d509d60a1af065c50fe94fe3843003552fef0c2a7319d556d4fd9"
+    },
+    {
+      "path": "github-pages/app/page.tsx",
+      "bytes": 252,
+      "sha256": "69260831b6054ec48a431783660b0aad859e85f7a61c73151a5e62686c7305ed"
+    },
+    {
+      "path": "github-pages/app/pages.css",
+      "bytes": 21186,
+      "sha256": "244853aa8d622a96c6c3282af5402c8ddb6b7bb6f0821fc48cca5b099fa071a3"
+    },
+    {
+      "path": "github-pages/app/roadmap/page.tsx",
+      "bytes": 212,
+      "sha256": "a23592a47d973b75c5208fa7d5c4566fade0462fc6780e50fc24e8ac982bcbe4"
+    },
+    {
+      "path": "github-pages/app/stages/[id]/page.tsx",
+      "bytes": 1343,
+      "sha256": "6d983aca6b7d0483382730686aee2b09a91ddb5d49499b41ced7240c25d94076"
+    },
+    {
+      "path": "github-pages/components/about.tsx",
+      "bytes": 6464,
+      "sha256": "c56ca31c55d20cbda17287e5ae55e95ca10569930c1accd1e7b0b53a205b2f40"
+    },
+    {
+      "path": "github-pages/components/common.tsx",
+      "bytes": 3111,
+      "sha256": "4e37e6f10e5f20e1020042909b9b444361a98ea58b38c567a6415d9b686d6aac"
+    },
+    {
+      "path": "github-pages/components/home.tsx",
+      "bytes": 9753,
+      "sha256": "819427c976cd179179070348d449f4ae742c06c9388f360cec3dace08f2fa983"
+    },
+    {
+      "path": "github-pages/components/lesson.tsx",
+      "bytes": 10309,
+      "sha256": "cdbbd70e02d269778d5a0137e73a5acfefcd15d89d2b6594a381b03c10aefd45"
+    },
+    {
+      "path": "github-pages/components/library.tsx",
+      "bytes": 3527,
+      "sha256": "758eaefab7b785f66fef193ee7dec64e1a5bb353a2e7cb205977bff01f2c09b9"
+    },
+    {
+      "path": "github-pages/components/observatory-page.tsx",
+      "bytes": 237,
+      "sha256": "3018b09529041e809220bd8dfccb2a8bb1f1b4dbc0cde2dc89bf288f9d778dcc"
+    },
+    {
+      "path": "github-pages/components/provider.tsx",
+      "bytes": 4123,
+      "sha256": "3a6229f3fe4952ab04768a4764100ceeebc9d31f8df15b6c45e13b08368401a4"
+    },
+    {
+      "path": "github-pages/components/roadmap.tsx",
+      "bytes": 1664,
+      "sha256": "18381fb486a186474a09a78b5cd3bc6ee301e234adc97486ecc27f432e1c925c"
+    },
+    {
+      "path": "github-pages/components/shell.tsx",
+      "bytes": 12378,
+      "sha256": "e8f6df2c64ccc6cb449ae67597a71da03d2c1d936526a59293db4ba2c7675b1b"
+    },
+    {
+      "path": "github-pages/components/stage.tsx",
+      "bytes": 5843,
+      "sha256": "333e11b9bfff10b75afaf8655b142dd5cea2e096ef5877d4fa9ab083fcd91485"
+    },
+    {
+      "path": "github-pages/next-env.d.ts",
+      "bytes": 288,
+      "sha256": "1862ac4bbbc5192d4bf562161df66ea547ed3e67173100656ab606ae9797db2b"
+    },
+    {
+      "path": "github-pages/next.config.ts",
+      "bytes": 644,
+      "sha256": "e52c0d1dbb42f25ea3bc7afaa58cd474a34c9c828537adc76cf02e825aeda879"
+    },
+    {
+      "path": "github-pages/tsconfig.json",
+      "bytes": 286,
+      "sha256": "78b677c16d546313a3d8d402e37b2e54e6bf6d8cd0fb9ae9f5f593c234d0cefe"
+    },
+    {
       "path": "next-env.d.ts",
       "bytes": 288,
       "sha256": "1862ac4bbbc5192d4bf562161df66ea547ed3e67173100656ab606ae9797db2b"
@@ -105,13 +225,18 @@
     },
     {
       "path": "package.json",
-      "bytes": 2161,
-      "sha256": "479cc5940bff6b0e482044c07216221c94907a85664d7ab270c546e941888921"
+      "bytes": 2670,
+      "sha256": "01097d20d3c525252df90b712c99507abd5c64dd2e9f3e3fd7b9c2718b1a74bb"
     },
     {
       "path": "playwright.config.ts",
       "bytes": 677,
       "sha256": "80cf281b1c2b81f4c14f102019fddc4b3c741e800ad93f3f246ddfd2a913855d"
+    },
+    {
+      "path": "playwright.pages.config.ts",
+      "bytes": 858,
+      "sha256": "dd1f0d84c1fbe12b78bb78163e584ea831514a36233d402e776cbce8ed1b007c"
     },
     {
       "path": "prisma/migrations/202610300001_init/migration.sql",
@@ -190,8 +315,8 @@
     },
     {
       "path": "public/fonts/Cairo-OFL.txt",
-      "bytes": 4473,
-      "sha256": "a4554e1799d42e1405924b61eb0e0722ae1623b1f1f07f995348f96c496362a9"
+      "bytes": 4380,
+      "sha256": "ce39edb04b690f144cd40dc59a1be26dcb089e539c8118289d1081cde4449d6f"
     },
     {
       "path": "public/fonts/Inter-OFL.txt",
@@ -329,6 +454,11 @@
       "sha256": "c12fb21d1ef6b3483a0683fe5f8cabaa0678dbe0200e0ac7eec08a3f93cc2761"
     },
     {
+      "path": "scripts/finalize-pages.mjs",
+      "bytes": 357,
+      "sha256": "f31412cdc85db5e2edada4a8f78cff0a12421302ac5a9051b2c16abaa0fac3a3"
+    },
+    {
       "path": "scripts/generate-content.ts",
       "bytes": 11194,
       "sha256": "1bd7aaf4424a72276c077d310985288089f618d7504301bd3498ca2bca0f933f"
@@ -340,13 +470,18 @@
     },
     {
       "path": "scripts/package-source.py",
-      "bytes": 4320,
-      "sha256": "bdca73be71e8db7283f90af199a55f3d1387f65fce010d2d84917c2910937c0f"
+      "bytes": 4523,
+      "sha256": "b17757b8f980c82a11dfda3ad1e1a7ebf6f457bd86a5e3325a51721cb7e7e427"
     },
     {
       "path": "scripts/prepare-browser-tests.ts",
       "bytes": 1167,
       "sha256": "639666f9a06a961dc67d4987c9aa71a44f5b703f9664e717c2624f3fd461dd11"
+    },
+    {
+      "path": "scripts/prepare-pages.mjs",
+      "bytes": 974,
+      "sha256": "d6a999cf0746092554cf52508ba363988064f8c50c7eff16bbd5aaa6624512f4"
     },
     {
       "path": "scripts/probe-reviewed-content.ts",
@@ -357,6 +492,11 @@
       "path": "scripts/refresh-pilot.ts",
       "bytes": 5624,
       "sha256": "c79ceab72bbf896e6a537239c3a8413246b17c6a474d008801ed5197e99a8d46"
+    },
+    {
+      "path": "scripts/serve-pages.mjs",
+      "bytes": 2566,
+      "sha256": "055172d6a6ba90c610b55416c573d492fbd2205de026c917d5a09a925e3a12ef"
     },
     {
       "path": "scripts/validate-content.ts",
@@ -420,8 +560,8 @@
     },
     {
       "path": "src/components/context.tsx",
-      "bytes": 5606,
-      "sha256": "631cbf89245c5de7a9ae162666253c662cbd71f5ad76f2818661e585af9bde61"
+      "bytes": 5709,
+      "sha256": "9365ee6bf38cefdc2132a4da11adc9db74410c358f47d35ffc537da5ac329d05"
     },
     {
       "path": "src/components/curriculum-pages.tsx",
@@ -455,8 +595,8 @@
     },
     {
       "path": "src/components/observatory.tsx",
-      "bytes": 41241,
-      "sha256": "5fbce4ad0d61650a706cac5f59635e341905489bfce6b1e37fcfffa7916393d8"
+      "bytes": 41464,
+      "sha256": "a32d7994a0c7f9f818ce0706858d37bfb8a3c882d1b1433ad0ffda12d0417e2a"
     },
     {
       "path": "src/components/progress-pages.tsx",
@@ -564,6 +704,11 @@
       "sha256": "b2a7d5661ede4c595b9b340566433f56de367c0f4c2a5d915a1dabc61cefd08e"
     },
     {
+      "path": "src/lib/public-asset.ts",
+      "bytes": 241,
+      "sha256": "9f2680a79bedd7568cb5c018427c208a11827baabe350af35dc74ab1387def0e"
+    },
+    {
       "path": "src/lib/question-schema.ts",
       "bytes": 5671,
       "sha256": "e5b49aa995ebacb54154a297594faee9cc4355ece74e7db59ef0029b91302ba2"
@@ -632,6 +777,16 @@
       "path": "tests/integration.test.ts",
       "bytes": 34581,
       "sha256": "376535ef7dcdc1e973f5c7d7e25430701adb774c4dd1aabb6c51b8f17fcc0570"
+    },
+    {
+      "path": "tests/pages/site.spec.ts",
+      "bytes": 6869,
+      "sha256": "5c081e9d93fdfffc79e230263d35aac9b202d40221ed072f4d254e2aba53f2c7"
+    },
+    {
+      "path": "tests/pages-export.test.mjs",
+      "bytes": 2323,
+      "sha256": "57fdf62cfb4508d039e69a7ce16504e06e653f33667ecf3259b4f2efebce7f33"
     },
     {
       "path": "tests/postgres-report.json",

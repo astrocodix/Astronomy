@@ -63,7 +63,8 @@ export async function request(path: string, options: RequestInit = {}, language 
     );
   return data;
 }
-const Context = createContext<any>(null);
+// Shared with the static GitHub Pages provider; the full app keeps its server-backed provider.
+export const Context = createContext<any>(null);
 export function AppProvider({ children }: { children: React.ReactNode }) {
   const [data, setData] = useState<AppData | null>(null);
   const [lang, setLanguage] = useState<Lang>('en');

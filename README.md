@@ -4,7 +4,7 @@
 
 A working, bilingual astronomy academy built with Next.js, React, TypeScript and Prisma. English and Arabic/RTL, persistent light/dark preferences, real learner records, an assessment engine, a protected content studio, and an optional server-side AI tutor.
 
-**Delivery status: functional first-stage pilot, not a fully authored twelve-stage degree programme.** The roadmap contains all 12 stages and 146 modules. Stage 1 has 16 substantial bilingual lessons across 8 modules. Stages 2–12 are clearly marked as in development. All pilot teaching and questions still require independent scientific and Arabic editorial approval before public release.
+**Delivery status: functional first-stage pilot, not a fully authored twelve-stage degree programme.** The roadmap contains all 12 stages and 146 modules. Stage 1 has 16 substantial bilingual lessons across 8 modules. Stages 2–12 are clearly marked as in development. All pilot teaching and questions still require independent scientific and Arabic editorial approval before a reviewed public launch.
 
 [دليل البدء بالعربية](docs/START-AR.md) · [Deployment](docs/DEPLOYMENT.md) · [Testing](docs/TESTING.md) · [Content & review](docs/CONTENT.md) · [Security](docs/SECURITY.md) · [Sources & rights](docs/SOURCES-AND-RIGHTS.md)
 
@@ -19,6 +19,26 @@ A working, bilingual astronomy academy built with Next.js, React, TypeScript and
 - **Observatory:** interactive orbital schematic, planet comparison, Moon-phase model, constellation patterns/star search, galaxy morphology, cosmic-scale illustrations, Schwarzschild-radius control, and five locally cached attributed scientific image products. These are educational models, **not live ephemerides, an accurate planetarium, or a daily-image feed**.
 - **Content studio:** Student/Instructor/Admin authorization; bilingual lesson and question authoring; all 12 question formats; curriculum editing; media uploads and metadata; references; review/publishing gates; user roles and settings for administrators; audit trail. Assessed questions are immutable—duplicate them to create a new version.
 - **Database:** five migrations each for SQLite and PostgreSQL. PostgreSQL 17.11 fresh-install and application smoke verification passed. Database backup and isolated restore checks passed for both providers.
+
+## GitHub Pages — static learning preview
+
+This repository also includes a separate **static preview** for GitHub Pages, expected at <https://astrocodix.github.io/Astronomy/> once Pages is enabled and the deployment workflow succeeds. It contains the 12-stage roadmap, the 16 bilingual first-stage pilot lessons, the interactive observatory, and attributed imagery and references. The lessons are explicitly labelled as awaiting independent scientific and Arabic review; stages 2–12 are outlines, not completed courses.
+
+Reading marks, language, and theme are stored in the browser when available; marks are not assessments and do not sync. GitHub Pages cannot run the database or API, so **accounts, synced progress, exams, certificates, AI tutor, uploads, and the content studio are unavailable** in this edition. It builds from the authored files in `src/content/`, not edits made in a running content studio. The original server-backed application remains unchanged and can be deployed separately.
+
+To publish, set **Settings → Pages → Build and deployment → Source** to **GitHub Actions**. The workflow in `.github/workflows/pages.yml` builds and deploys on pushes to `main`; it also accepts the current Arena working branch for the initial publication. Once merged, future changes to `main` deploy automatically. For a fork, update the tracked branch name if its default branch differs. The workflow derives the correct repository base path from Pages, including an empty path for a user/organization site or custom domain.
+
+To build and inspect the project-site export locally without a database:
+
+```bash
+npm ci
+NEXT_PUBLIC_BASE_PATH=/Astronomy npm run pages:build
+NEXT_PUBLIC_BASE_PATH=/Astronomy npm run test:pages
+NEXT_PUBLIC_BASE_PATH=/Astronomy npm run pages:serve
+# Open http://localhost:4173/Astronomy/
+```
+
+Use your repository name instead of `/Astronomy`, or an empty `NEXT_PUBLIC_BASE_PATH` for a site at the domain root. `npm run pages:dev` runs the static edition at port 3000 for development. The generated `github-pages/public/` and `github-pages/out/` directories are ignored; they should not be committed. See [Testing](docs/TESTING.md#github-pages-static-edition) for browser checks and [Deployment](docs/DEPLOYMENT.md#github-pages-static-preview) for limitations and release considerations.
 
 ## Quick start — local SQLite
 
@@ -105,7 +125,9 @@ Imports require explicit `--apply --actor-email <existing-educator-email>` to cr
 ## Project map
 
 ```text
-src/app/                    Next routes, layout, theme and responsive styles
+src/app/                    Full server application routes, layout and styles
+github-pages/               Separate static Pages app (generated assets/output are ignored)
+.github/workflows/pages.yml Pages build and deployment workflow
 src/components/             Bilingual learner experience and protected editor
 src/content/                Authored curriculum, lessons, glossary, questions, references
 src/lib/                    Auth, validation, learning, examinations, tutor and API

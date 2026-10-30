@@ -38,6 +38,7 @@ import {
 } from './ui';
 import { ConceptDiagram } from './diagrams';
 import { planets } from '@/content/planets';
+import { publicAsset } from '@/lib/public-asset';
 const tabs = [
   ['solar', 'Solar system', 'النظام الشمسي', Orbit],
   ['compare', 'Compare planets', 'قارن الكواكب', Scale],
@@ -300,7 +301,7 @@ function SolarSystem() {
           <div className="planet-profile-image">
             {selected === 5 ? (
               <img
-                src="/images/saturn.webp"
+                src={publicAsset('/images/saturn.webp')}
                 alt={t('Natural-color Cassini image of Saturn', 'صورة كاسيني الطبيعية لزحل')}
               />
             ) : (
@@ -527,7 +528,7 @@ function MoonPhases() {
           </defs>
           <circle cx={cx} cy={cy} r={r + 12} stroke="#37354d" fill="none" />
           <image
-            href="/images/moon.webp"
+            href={publicAsset('/images/moon.webp')}
             x={cx - r}
             y={cy - r}
             width={r * 2}
@@ -537,7 +538,7 @@ function MoonPhases() {
           />
           {illuminated > 0.001 && (
             <image
-              href="/images/moon.webp"
+              href={publicAsset('/images/moon.webp')}
               x={cx - r}
               y={cy - r}
               width={r * 2}
@@ -1032,7 +1033,11 @@ function ImageGallery() {
         {gallery.map((im) => (
           <button key={im.image} onClick={() => setSelected(im)} className="gallery-card panel">
             <div>
-              <img src={`/images/${im.image}.webp`} alt={t(im.altEn, im.altAr)} loading="lazy" />
+              <img
+                src={publicAsset(`/images/${im.image}.webp`)}
+                alt={t(im.altEn, im.altAr)}
+                loading="lazy"
+              />
               <span>
                 <Maximize size={18} />
               </span>
@@ -1051,7 +1056,10 @@ function ImageGallery() {
       {selected && (
         <Modal title={t(selected.en, selected.ar)} onClose={() => setSelected(null)} wide>
           <figure className="science-figure">
-            <img src={`/images/${selected.image}.webp`} alt={t(selected.altEn, selected.altAr)} />
+            <img
+              src={publicAsset(`/images/${selected.image}.webp`)}
+              alt={t(selected.altEn, selected.altAr)}
+            />
             <figcaption>
               <strong>{t(selected.subEn, selected.subAr)}</strong>
               <p>
