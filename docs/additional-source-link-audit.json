@@ -1,0 +1,30 @@
+[
+  {
+    "url": "https://science.nasa.gov/moon/moon-phases/",
+    "status": 200,
+    "resolved": "https://science.nasa.gov/moon/moon-phases/",
+    "checkedAt": "2026-10-30T08:37:28.076594+00:00",
+    "scope": "Link accessibility only, not independent scientific or license verification."
+  },
+  {
+    "url": "https://science.nasa.gov/universe/galaxies/",
+    "status": 200,
+    "resolved": "https://science.nasa.gov/universe/galaxies/",
+    "checkedAt": "2026-10-30T08:37:27.882274+00:00",
+    "scope": "Link accessibility only, not independent scientific or license verification."
+  },
+  {
+    "url": "https://openstax.org/books/astronomy-2e/pages/5-1-the-behavior-of-light",
+    "status": 200,
+    "resolved": "https://openstax.org/books/astronomy-2e/pages/5-1-the-behavior-of-light",
+    "checkedAt": "2026-10-30T08:37:27.204328+00:00",
+    "scope": "Link accessibility only, not independent scientific or license verification."
+  },
+  {
+    "url": "https://openstax.org/books/astronomy-2e/pages/5-2-the-electromagnetic-spectrum",
+    "status": 200,
+    "resolved": "https://openstax.org/books/astronomy-2e/pages/5-2-the-electromagnetic-spectrum",
+    "checkedAt": "2026-10-30T08:37:27.196332+00:00",
+    "scope": "Link accessibility only, not independent scientific or license verification."
+  }
+]

@@ -1,0 +1,33 @@
+{
+  "checkedAt": "2026-10-30T08:28:41.295191+00:00",
+  "status": "passed",
+  "sqlite": {
+    "source": "backups/academy-2026-10-30T08-15-28-897Z.db",
+    "restoredTo": "disposable copy",
+    "integrityCheck": "ok",
+    "foreignKeyViolations": 0,
+    "counts": {
+      "LearningStage": 12,
+      "Module": 146,
+      "Lesson": 16,
+      "Question": 864,
+      "ExamTemplate": 57,
+      "_prisma_migrations": 5
+    }
+  },
+  "postgresql": {
+    "source": "backups/academy-2026-10-30T08-15-26-910Z.pgdump",
+    "serverVersion": "17.11",
+    "restoredTo": "new disposable database",
+    "pgRestore": "exit 0; --exit-on-error --no-owner --no-privileges",
+    "counts": {
+      "LearningStage": 12,
+      "Module": 146,
+      "Lesson": 16,
+      "Question": 864,
+      "ExamTemplate": 57,
+      "_prisma_migrations": 5
+    }
+  },
+  "scope": "Database archive restore and schema/content queries, not an off-site disaster-recovery or uploaded-media restore exercise. Production data unchanged."
+}

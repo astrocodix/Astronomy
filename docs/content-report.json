@@ -1,0 +1,250 @@
+{
+  "checkedAt": "2026-10-30T08:46:21.171Z",
+  "passed": true,
+  "stages": 12,
+  "roadmapModules": 146,
+  "questions": 864,
+  "formats": [
+    "MCQ",
+    "TRUE_FALSE",
+    "FILL",
+    "MATCH",
+    "MULTI_SELECT",
+    "ORDER",
+    "NUMERIC",
+    "ADVANCED",
+    "REASONING",
+    "IMAGE",
+    "DIAGRAM",
+    "SCENARIO"
+  ],
+  "modules": [
+    {
+      "moduleId": "m-1-1",
+      "questions": 108,
+      "distinctConceptKeys": 33
+    },
+    {
+      "moduleId": "m-1-2",
+      "questions": 108,
+      "distinctConceptKeys": 33
+    },
+    {
+      "moduleId": "m-1-3",
+      "questions": 108,
+      "distinctConceptKeys": 33
+    },
+    {
+      "moduleId": "m-1-4",
+      "questions": 108,
+      "distinctConceptKeys": 33
+    },
+    {
+      "moduleId": "m-1-5",
+      "questions": 108,
+      "distinctConceptKeys": 33
+    },
+    {
+      "moduleId": "m-1-6",
+      "questions": 108,
+      "distinctConceptKeys": 33
+    },
+    {
+      "moduleId": "m-1-7",
+      "questions": 108,
+      "distinctConceptKeys": 33
+    },
+    {
+      "moduleId": "m-1-8",
+      "questions": 108,
+      "distinctConceptKeys": 33
+    }
+  ],
+  "lessons": [
+    {
+      "id": "l-1-1",
+      "titleEn": "Your Place in the Universe",
+      "titleAr": "مكانك في الكون",
+      "sections": 10,
+      "enWords": 895,
+      "arWords": 685,
+      "learningMinutes": 18,
+      "questions": 52,
+      "reviewStatus": "PENDING"
+    },
+    {
+      "id": "l-1-2",
+      "titleEn": "Reading the Night Sky",
+      "titleAr": "قراءة سماء الليل",
+      "sections": 10,
+      "enWords": 840,
+      "arWords": 631,
+      "learningMinutes": 18,
+      "questions": 56,
+      "reviewStatus": "PENDING"
+    },
+    {
+      "id": "l-2-1",
+      "titleEn": "From Observation to Explanation",
+      "titleAr": "من الرصد إلى التفسير",
+      "sections": 10,
+      "enWords": 835,
+      "arWords": 637,
+      "learningMinutes": 18,
+      "questions": 52,
+      "reviewStatus": "PENDING"
+    },
+    {
+      "id": "l-2-2",
+      "titleEn": "Decoding Starlight",
+      "titleAr": "فك شيفرة ضوء النجوم",
+      "sections": 10,
+      "enWords": 809,
+      "arWords": 630,
+      "learningMinutes": 18,
+      "questions": 56,
+      "reviewStatus": "PENDING"
+    },
+    {
+      "id": "l-3-1",
+      "titleEn": "A Shared History of Looking Up",
+      "titleAr": "تاريخ مشترك للنظر إلى السماء",
+      "sections": 10,
+      "enWords": 774,
+      "arWords": 586,
+      "learningMinutes": 17,
+      "questions": 52,
+      "reviewStatus": "PENDING"
+    },
+    {
+      "id": "l-3-2",
+      "titleEn": "How Our Cosmic Model Changed",
+      "titleAr": "كيف تغيّر نموذجنا للكون",
+      "sections": 10,
+      "enWords": 821,
+      "arWords": 623,
+      "learningMinutes": 18,
+      "questions": 56,
+      "reviewStatus": "PENDING"
+    },
+    {
+      "id": "l-4-1",
+      "titleEn": "Looking Back in Time",
+      "titleAr": "النظر إلى الماضي",
+      "sections": 10,
+      "enWords": 823,
+      "arWords": 622,
+      "learningMinutes": 18,
+      "questions": 52,
+      "reviewStatus": "PENDING"
+    },
+    {
+      "id": "l-4-2",
+      "titleEn": "Evidence for an Evolving Universe",
+      "titleAr": "أدلة كون متطور",
+      "sections": 10,
+      "enWords": 837,
+      "arWords": 613,
+      "learningMinutes": 18,
+      "questions": 56,
+      "reviewStatus": "PENDING"
+    },
+    {
+      "id": "l-5-1",
+      "titleEn": "A Field Guide to Celestial Objects",
+      "titleAr": "دليل الأجرام السماوية",
+      "sections": 10,
+      "enWords": 842,
+      "arWords": 592,
+      "learningMinutes": 18,
+      "questions": 52,
+      "reviewStatus": "PENDING"
+    },
+    {
+      "id": "l-5-2",
+      "titleEn": "Nebulae, Galaxies & Stellar Remnants",
+      "titleAr": "السدم والمجرات والبقايا النجمية",
+      "sections": 10,
+      "enWords": 848,
+      "arWords": 614,
+      "learningMinutes": 18,
+      "questions": 56,
+      "reviewStatus": "PENDING"
+    },
+    {
+      "id": "l-6-1",
+      "titleEn": "Thinking Like an Astronomer",
+      "titleAr": "التفكير مثل عالم فلك",
+      "sections": 10,
+      "enWords": 804,
+      "arWords": 585,
+      "learningMinutes": 18,
+      "questions": 52,
+      "reviewStatus": "PENDING"
+    },
+    {
+      "id": "l-6-2",
+      "titleEn": "Evidence, Uncertainty & Scientific Claims",
+      "titleAr": "الأدلة وعدم اليقين والادعاءات العلمية",
+      "sections": 10,
+      "enWords": 814,
+      "arWords": 594,
+      "learningMinutes": 18,
+      "questions": 56,
+      "reviewStatus": "PENDING"
+    },
+    {
+      "id": "l-7-1",
+      "titleEn": "Astronomical Units & Scientific Notation",
+      "titleAr": "الوحدات الفلكية والترميز العلمي",
+      "sections": 10,
+      "enWords": 827,
+      "arWords": 624,
+      "learningMinutes": 18,
+      "questions": 52,
+      "reviewStatus": "PENDING"
+    },
+    {
+      "id": "l-7-2",
+      "titleEn": "Parallax: Measuring the Nearby Stars",
+      "titleAr": "اختلاف المنظر: قياس النجوم القريبة",
+      "sections": 10,
+      "enWords": 782,
+      "arWords": 584,
+      "learningMinutes": 17,
+      "questions": 56,
+      "reviewStatus": "PENDING"
+    },
+    {
+      "id": "l-8-1",
+      "titleEn": "A Universe of Scale",
+      "titleAr": "كون من المقاييس",
+      "sections": 10,
+      "enWords": 828,
+      "arWords": 586,
+      "learningMinutes": 18,
+      "questions": 52,
+      "reviewStatus": "PENDING"
+    },
+    {
+      "id": "l-8-2",
+      "titleEn": "The Cosmic Distance Ladder",
+      "titleAr": "سُلّم المسافات الكونية",
+      "sections": 10,
+      "enWords": 846,
+      "arWords": 629,
+      "learningMinutes": 18,
+      "questions": 56,
+      "reviewStatus": "PENDING"
+    }
+  ],
+  "images": 5,
+  "references": 12,
+  "errors": [],
+  "warnings": [
+    "Content is an authored pilot pending independent scientific and Arabic editorial review.",
+    "The 864 records include concept variants; they are not 864 independently reviewed concepts.",
+    "Stages 2–12 are a complete roadmap, not completed course content.",
+    "Link accessibility does not establish a license or independently verify every scientific claim."
+  ]
+}

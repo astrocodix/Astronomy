@@ -1,0 +1,68 @@
+{
+  "carina": {
+    "titleEn": "The Cosmic Cliffs",
+    "titleAr": "الجروف الكونية",
+    "captionEn": "Webb NIRCam observations of gas, dust, and forming stars at the edge of NGC 3324, about 7,600 light-years away. Visible colors are assigned to infrared filters, not natural eye colors.",
+    "captionAr": "أرصاد ويب NIRCam للغاز والغبار والنجوم المتشكلة عند حافة NGC 3324 على بعد نحو 7600 سنة ضوئية. الألوان المرئية معينة لمرشحات تحت حمراء وليست ألوان العين الطبيعية.",
+    "altEn": "Diffraction-spiked stars above illuminated orange-brown gas and dust.",
+    "altAr": "نجوم ذات أشواك حيود فوق غاز وغبار مضاء بالبرتقالي والبني.",
+    "credit": "NASA, ESA, CSA, STScI",
+    "kind": "OBSERVATION",
+    "source": "https://science.nasa.gov/asset/webb/cosmic-cliffs-in-the-carina-nebula-nircam-image/",
+    "download": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2022/07/STScI-01GA6KKWG229B16K4Q38CH3BXS.png?w=2000&h=1158&fit=clip",
+    "checkedAt": "2026-10-30"
+  },
+  "saturn": {
+    "titleEn": "Jewel of the Solar System",
+    "titleAr": "جوهرة النظام الشمسي",
+    "captionEn": "A natural-color Cassini mosaic of Saturn and its main rings from observations on October 10, 2013. This is a processed spacecraft image product.",
+    "captionAr": "فسيفساء كاسيني بألوان طبيعية لزحل وحلقاته الرئيسية من أرصاد 10 أكتوبر 2013. هذا منتج صور مركبة فضائية معالجة.",
+    "altEn": "Golden Saturn and its broad tilted rings against dark space.",
+    "altAr": "زحل الذهبي وحلقاته العريضة المائلة في فضاء مظلم.",
+    "credit": "NASA/JPL-Caltech/Space Science Institute/Cornell",
+    "kind": "OBSERVATION",
+    "source": "https://science.nasa.gov/image-detail/amf-pia17474/",
+    "download": "https://images-assets.nasa.gov/image/PIA17474/PIA17474~large.jpg",
+    "checkedAt": "2026-10-30",
+    "attributionNote": "NASA Images archive PIA17474 lists NASA/JPL-Caltech/SSI/Cornell. The NASA Science image-detail page omits Cornell; the fuller archive credit is retained for the downloaded archive product."
+  },
+  "earth": {
+    "titleEn": "Earthrise from Lunar Orbit",
+    "titleAr": "شروق الأرض من المدار القمري",
+    "captionEn": "An Earthrise composite from Lunar Reconnaissance Orbiter camera data. The narrow-angle camera supplies detail and the wide-angle camera supplies color. It is not the Apollo 17 Blue Marble image.",
+    "captionAr": "صورة مركبة لشروق الأرض من بيانات كاميرا مستكشف القمر المداري. توفر الكاميرا ضيقة الزاوية التفاصيل وواسعة الزاوية الألوان. ليست صورة الرخام الأزرق لأبولو 17.",
+    "altEn": "Blue and white Earth above a gray lunar horizon.",
+    "altAr": "الأرض الزرقاء والبيضاء فوق أفق قمري رمادي.",
+    "credit": "NASA/Goddard/Arizona State University",
+    "kind": "OBSERVATION",
+    "source": "https://images.nasa.gov/details/GSFC_20171208_Archive_e000496",
+    "download": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000496/GSFC_20171208_Archive_e000496~small.jpg",
+    "checkedAt": "2026-10-30"
+  },
+  "andromeda": {
+    "titleEn": "A Window into Andromeda",
+    "titleAr": "نافذة على أندروميدا",
+    "captionEn": "A detail from NASA's Hubble panorama of Andromeda, showing resolved stars and dust lanes. This image product is credited to NASA, ESA, and G. Bacon (STScI) in the source archive.",
+    "captionAr": "تفصيل من بانوراما هابل لأندروميدا يظهر نجومًا منفصلة وممرات غبار. ينسب أرشيف المصدر منتج الصورة إلى ناسا ووكالة الفضاء الأوروبية وG. Bacon من STScI.",
+    "altEn": "Dense individual stars and dark dust lanes across the disk of Andromeda.",
+    "altAr": "نجوم منفصلة كثيفة وممرات غبار داكنة عبر قرص أندروميدا.",
+    "credit": "NASA, ESA, and G. Bacon (STScI)",
+    "kind": "OBSERVATION",
+    "source": "https://images.nasa.gov/details/GSFC_20171208_Archive_e000833",
+    "download": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000833/GSFC_20171208_Archive_e000833~orig.jpg",
+    "checkedAt": "2026-10-30"
+  },
+  "moon": {
+    "titleEn": "The Moon, Visualized from LRO Data",
+    "titleAr": "القمر كما تصوره بيانات مستكشف القمر",
+    "captionEn": "NASA scientific visualization using LRO camera and laser-altimeter terrain data, from the Moon Phase and Libration series. This is a data-based rendering, not a single telescope photograph and not AI-generated imagery.",
+    "captionAr": "تصوير علمي لناسا باستخدام بيانات التضاريس من كاميرا مستكشف القمر ومقياس الارتفاع الليزري، من سلسلة أطوار القمر وميسانه. هذا رسم قائم على البيانات لا صورة تلسكوبية منفردة ولا صورة مولدة بالذكاء الاصطناعي.",
+    "altEn": "A rendered full lunar disk showing dark maria and cratered highlands.",
+    "altAr": "قرص قمري كامل مرسوم من البيانات يظهر بحارًا داكنة ومرتفعات ذات فوهات.",
+    "credit": "NASA/Goddard Scientific Visualization Studio · Ernie Wright · LRO/LOLA/LROC",
+    "kind": "ILLUSTRATION",
+    "source": "https://svs.gsfc.nasa.gov/4236/",
+    "download": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000868/GSFC_20171208_Archive_e000868~medium.jpg",
+    "checkedAt": "2026-10-30"
+  }
+}

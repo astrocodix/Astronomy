@@ -1,0 +1,3 @@
+ALTER TABLE "AIMessage" ADD COLUMN "provider" TEXT NOT NULL DEFAULT 'unknown';
+ALTER TABLE "AIMessage" ADD COLUMN "sources" JSONB NOT NULL DEFAULT '[]';
+ALTER TABLE "AIUsageLog" ADD COLUMN "configurationHash" TEXT NOT NULL DEFAULT '';

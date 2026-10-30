@@ -1,0 +1,129 @@
+{
+  "pageErrors": [],
+  "accessibility": [
+    {
+      "page": "dark /",
+      "violations": []
+    },
+    {
+      "page": "dark /lesson/l-1-1",
+      "violations": []
+    },
+    {
+      "page": "dark /tutor",
+      "violations": []
+    },
+    {
+      "page": "dark /questions",
+      "violations": []
+    },
+    {
+      "page": "dark /settings",
+      "violations": []
+    },
+    {
+      "page": "dark /welcome",
+      "violations": []
+    },
+    {
+      "page": "dark /register",
+      "violations": []
+    },
+    {
+      "page": "dark /login",
+      "violations": []
+    },
+    {
+      "page": "dark /roadmap",
+      "violations": []
+    },
+    {
+      "page": "dark /stages/s-1",
+      "violations": []
+    },
+    {
+      "page": "dark /observatory",
+      "violations": []
+    },
+    {
+      "page": "dark /exams",
+      "violations": []
+    },
+    {
+      "page": "dark /progress",
+      "violations": []
+    },
+    {
+      "page": "dark /achievements",
+      "violations": []
+    },
+    {
+      "page": "dark /certificates",
+      "violations": []
+    },
+    {
+      "page": "dark /profile",
+      "violations": []
+    },
+    {
+      "page": "dark /library",
+      "violations": []
+    },
+    {
+      "page": "light dashboard",
+      "violations": []
+    },
+    {
+      "page": "light /lesson/l-1-1",
+      "violations": []
+    },
+    {
+      "page": "light /tutor",
+      "violations": []
+    },
+    {
+      "page": "light /questions",
+      "violations": []
+    },
+    {
+      "page": "light /settings",
+      "violations": []
+    },
+    {
+      "page": "light /register",
+      "violations": []
+    },
+    {
+      "page": "light /roadmap",
+      "violations": []
+    },
+    {
+      "page": "light /observatory",
+      "violations": []
+    },
+    {
+      "page": "light /welcome",
+      "violations": []
+    },
+    {
+      "page": "Arabic mobile light dashboard",
+      "violations": []
+    },
+    {
+      "page": "Arabic mobile light /lesson/l-1-1",
+      "violations": []
+    },
+    {
+      "page": "Arabic mobile light /questions",
+      "violations": []
+    },
+    {
+      "page": "Arabic mobile light /settings",
+      "violations": []
+    },
+    {
+      "page": "Arabic mobile light /register",
+      "violations": []
+    }
+  ]
+}

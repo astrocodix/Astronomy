@@ -1,0 +1,1 @@
+ALTER TABLE "ExamAttempt" ADD COLUMN "draftAnswers" JSONB NOT NULL DEFAULT ('{}');

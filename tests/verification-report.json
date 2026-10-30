@@ -1,0 +1,82 @@
+{
+  "checkedAt": "2026-10-30T09:03:23.850343+00:00",
+  "release": "Functional first-stage pilot; later stages planned; independent content/rights review pending",
+  "status": "passed within documented verification scope",
+  "runtime": {
+    "node": "v20.20.2",
+    "next": "16.4.3",
+    "react": "19.3.1",
+    "prisma": "6.19.3",
+    "typescript": "5.9.3",
+    "postgresqlSmoke": "17.11"
+  },
+  "productionBuild": "passed including TypeScript",
+  "standaloneTypecheck": "passed",
+  "unit": {
+    "passed": 14,
+    "failed": 0
+  },
+  "integration": {
+    "scenariosPassed": 15,
+    "nodeTestCountIncludingParent": 16,
+    "failed": 0,
+    "provider": "SIMULATED, not a live paid AI service",
+    "includes": [
+      "full first-stage path and certificate",
+      "atomic recovery-token race",
+      "instructor authorization and learner-list redaction",
+      "draft-only import"
+    ]
+  },
+  "browser": {
+    "workflowsPassed": 10,
+    "failed": 0,
+    "skipped": 0,
+    "pageErrors": [],
+    "viewports": [
+      320,
+      390,
+      768,
+      1440
+    ],
+    "axeSamples": 31,
+    "automatedViolations": 0,
+    "engine": "Chromium",
+    "scope": "Headless real-browser tests; responsive emulation and reduced motion, not physical devices or accessibility certification"
+  },
+  "database": {
+    "sqliteMigrations": 5,
+    "postgresqlMigrations": 5,
+    "postgresqlSmoke": "passed",
+    "backupRestores": "passed for SQLite and PostgreSQL into disposable destinations; not an off-site/media restore drill"
+  },
+  "content": {
+    "stages": 12,
+    "roadmapModules": 146,
+    "authoredStageModules": 8,
+    "lessons": 16,
+    "questionRecordsIncludingVariants": 864,
+    "formats": 12,
+    "reviewStatus": "PENDING",
+    "laterStages": "PLANNED"
+  },
+  "dependencies": {
+    "auditVulnerabilities": {
+      "info": 0,
+      "low": 0,
+      "moderate": 0,
+      "high": 0,
+      "critical": 0,
+      "total": 0
+    }
+  },
+  "isolation": "Synthetic browser and integration activity stayed in disposable databases; no fabricated learner results were seeded into the main database. Three pending image metadata credits were intentionally corrected with an audit trail.",
+  "freshSourceInstall": "passed: npm ci, fresh SQLite migrations/seed, standalone typecheck, unit/integration tests and production build in an isolated archive extraction",
+  "notVerified": [
+    "Live paid AI provider and actual recovery-mail delivery",
+    "Independent scientific/Arabic/media-rights approval",
+    "High-concurrency load and exhaustive simultaneous submissions",
+    "Every browser engine/assistive technology and actual mobile hardware",
+    "Hosted-cloud/proxy commissioning, pre-header AI cancellation and full off-site media restoration"
+  ]
+}

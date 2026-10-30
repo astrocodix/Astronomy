@@ -1,0 +1,56 @@
+{
+  "name": "astroverse-academy",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A bilingual, evidence-led astronomy academy",
+  "scripts": {
+    "dev": "next dev --webpack -H 0.0.0.0 -p 3000",
+    "build": "node scripts/database.mjs generate && next build --webpack",
+    "start": "next start -H 0.0.0.0 -p 3000",
+    "db:generate": "node scripts/database.mjs generate",
+    "db:migrate": "node scripts/database.mjs migrate",
+    "db:seed": "tsx prisma/seed.ts",
+    "setup": "node scripts/database.mjs setup",
+    "test": "npm run test:unit && npm run test:integration",
+    "test:e2e": "playwright test",
+    "typecheck": "tsc --noEmit",
+    "content:validate": "tsx scripts/validate-content.ts",
+    "content:generate": "tsx scripts/generate-content.ts",
+    "db:backup": "node scripts/backup.mjs",
+    "test:unit": "tsx --test tests/core.test.ts",
+    "test:integration": "tsx --test tests/integration.test.ts",
+    "test:postgres": "tsx tests/postgres-smoke.ts",
+    "content:import": "tsx scripts/import-content.ts",
+    "content:refresh-pilot": "tsx scripts/refresh-pilot.ts",
+    "media:download": "python3 scripts/download-images.py",
+    "test:browser:prepare": "tsx scripts/prepare-browser-tests.ts",
+    "format": "prettier --write \"src/**/*.{ts,tsx,css}\" \"scripts/*.{ts,mjs}\" \"tests/**/*.ts\" \"prisma/seed.ts\" \"*.{ts,json,md}\" \"docs/*.md\"",
+    "format:check": "prettier --check \"src/**/*.{ts,tsx,css}\" \"scripts/*.{ts,mjs}\" \"tests/**/*.ts\" \"prisma/seed.ts\" \"*.{ts,json,md}\" \"docs/*.md\""
+  },
+  "dependencies": {
+    "@prisma/client": "6.19.3",
+    "clsx": "2.1.1",
+    "dotenv": "^16.6.1",
+    "lucide-react": "0.468.0",
+    "next": "16.4.3",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "recharts": "3.10.1",
+    "sharp": "^0.35.5",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.11.0",
+    "@playwright/test": "1.56.1",
+    "@types/node": "22.19.0",
+    "@types/react": "19.1.17",
+    "@types/react-dom": "19.1.11",
+    "prettier": "^3.6.2",
+    "prisma": "6.19.3",
+    "tsx": "4.20.6",
+    "typescript": "5.9.3"
+  },
+  "overrides": {
+    "deepmerge-ts": "8.0.2"
+  }
+}

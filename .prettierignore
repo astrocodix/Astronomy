@@ -1,0 +1,19 @@
+node_modules/
+.next/
+.cache/
+backups/
+storage/
+test-results/
+playwright-report/
+public/fonts/
+public/images/
+next-env.d.ts
+package-lock.json
+*.db
+*.tsbuildinfo
+tests/*.json
+tests/*.log
+tests/screenshots/
+docs/*.json
+Unselected files/
+deliverables/

@@ -1,0 +1,305 @@
+
+added 119 packages, and audited 120 packages in 14s
+
+19 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+> astroverse-academy@1.0.0 setup
+> node scripts/database.mjs setup
+
+Environment variables loaded from .env
+Prisma schema loaded from prisma/schema.prisma
+
+✔ Generated Prisma Client (v6.19.3) to ./node_modules/@prisma/client in 418ms
+
+Start by importing your Prisma Client (See: https://pris.ly/d/importing-client)
+
+Tip: Want to turn off tips and other hints? https://pris.ly/tip-4-nohints
+
+Environment variables loaded from .env
+Prisma schema loaded from prisma/schema.prisma
+Datasource "db": SQLite database "academy.db" at "file:./academy.db"
+
+SQLite database academy.db created at file:./academy.db
+
+5 migrations found in prisma/migrations
+
+Applying migration `202610300001_init`
+Applying migration `202610300002_exam_autosave`
+Applying migration `202610300003_review_and_draft_version`
+Applying migration `202610300004_tutor_provenance`
+Applying migration `202610300005_one_active_exam`
+
+┌─────────────────────────────────────────────────────────┐
+│  Update available 6.19.3 -> 8.0.0-rc.28                 │
+│                                                         │
+│  This is a major update - please follow the guide at    │
+│  https://pris.ly/d/major-version-upgrade                │
+│                                                         │
+│  Run the following to update                            │
+│    npm i --save-dev prisma@latest                       │
+│    npm i @prisma/client@latest                          │
+└─────────────────────────────────────────────────────────┘
+The following migration(s) have been applied:
+
+migrations/
+  └─ 202610300001_init/
+    └─ migration.sql
+  └─ 202610300002_exam_autosave/
+    └─ migration.sql
+  └─ 202610300003_review_and_draft_version/
+    └─ migration.sql
+  └─ 202610300004_tutor_provenance/
+    └─ migration.sql
+  └─ 202610300005_one_active_exam/
+    └─ migration.sql
+      
+All migrations have been successfully applied.
+{
+  "stages": 12,
+  "modules": 146,
+  "lessons": 16,
+  "questions": 864,
+  "insertedQuestions": 864,
+  "examTemplates": 57,
+  "contentReview": "PENDING — pilot preview only"
+}
+
+> astroverse-academy@1.0.0 typecheck
+> tsc --noEmit
+
+
+> astroverse-academy@1.0.0 test
+> npm run test:unit && npm run test:integration
+
+
+> astroverse-academy@1.0.0 test:unit
+> tsx --test tests/core.test.ts
+
+TAP version 13
+# Subtest: roadmap has 12 stages and 146 genuine module titles
+ok 1 - roadmap has 12 stages and 146 genuine module titles
+  ---
+  duration_ms: 0.814474
+  ...
+# Subtest: all 16 bilingual lessons have substantial teaching and activities
+ok 2 - all 16 bilingual lessons have substantial teaching and activities
+  ---
+  duration_ms: 3.790937
+  ...
+# Subtest: 864 variants cover all 12 formats and exceed item-count requirements
+ok 3 - 864 variants cover all 12 formats and exceed item-count requirements
+  ---
+  duration_ms: 16.665882
+  ...
+# Subtest: every seed question passes the same schema as CMS imports
+ok 4 - every seed question passes the same schema as CMS imports
+  ---
+  duration_ms: 38.996721
+  ...
+# Subtest: gold answer for every question grades correctly; reasoning stays provisional
+ok 5 - gold answer for every question grades correctly; reasoning stays provisional
+  ---
+  duration_ms: 6.059171
+  ...
+# Subtest: numeric parser accepts requested decimal/scientific and Arabic forms only
+ok 6 - numeric parser accepts requested decimal/scientific and Arabic forms only
+  ---
+  duration_ms: 0.739872
+  ...
+# Subtest: sets, order and matching reject duplicates, extra keys, and coercion
+ok 7 - sets, order and matching reject duplicates, extra keys, and coercion
+  ---
+  duration_ms: 0.258568
+  ...
+# Subtest: Arabic text normalization supports diacritics without discarding meaning
+ok 8 - Arabic text normalization supports diacritics without discarding meaning
+  ---
+  duration_ms: 0.177241
+  ...
+# Subtest: unsubmitted shape never includes answer, explanation, option order, or arbitrary private data
+ok 9 - unsubmitted shape never includes answer, explanation, option order, or arbitrary private data
+  ---
+  duration_ms: 17.369941
+  ...
+# Subtest: balanced selection has no repeated records and honors 30/40/30 when possible
+ok 10 - balanced selection has no repeated records and honors 30/40/30 when possible
+  ---
+  duration_ms: 7.935189
+  ...
+# Subtest: balanced selection handles shortages without duplicate IDs
+ok 11 - balanced selection handles shortages without duplicate IDs
+  ---
+  duration_ms: 0.367388
+  ...
+# Subtest: selection favors unseen independent concepts, shuffle never mutates input
+ok 12 - selection favors unseen independent concepts, shuffle never mutates input
+  ---
+  duration_ms: 0.464456
+  ...
+# Subtest: mastery is regularized and latest distinct-concept evidence wins
+ok 13 - mastery is regularized and latest distinct-concept evidence wins
+  ---
+  duration_ms: 0.783755
+  ...
+# Subtest: CMS validator rejects answer/type mismatches and missing image provenance
+ok 14 - CMS validator rejects answer/type mismatches and missing image provenance
+  ---
+  duration_ms: 0.839463
+  ...
+1..14
+# tests 14
+# suites 0
+# pass 14
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 609.093512
+
+> astroverse-academy@1.0.0 test:integration
+> tsx --test tests/integration.test.ts
+
+TAP version 13
+# Subtest: isolated database / API / tutor-provider-contract integration
+    # Subtest: health, real initial counts, guest sessions, RBAC, and request origin
+    ok 1 - health, real initial counts, guest sessions, RBAC, and request origin
+      ---
+      duration_ms: 136.836992
+      ...
+    # Subtest: registration preserves progress identity and rejects injected roles
+    ok 2 - registration preserves progress identity and rejects injected roles
+      ---
+      duration_ms: 76.205282
+      ...
+# prisma:error 
+# Invalid `db.examAttempt.create()` invocation in
+# /home/user/.cache/release-validation/astroverse-academy/src/lib/exams.ts:151:36
+#   148   : null;
+#   149 let attempt;
+#   150 try {
+# → 151   attempt = await db.examAttempt.create(
+# Unique constraint failed on the fields: (`userId`)
+    # Subtest: quick examination is balanced, answer-free, resumable, and owner-scoped
+    ok 3 - quick examination is balanced, answer-free, resumable, and owner-scoped
+      ---
+      duration_ms: 135.399348
+      ...
+    # Subtest: draft revision, persistence, locale independence, and submission idempotency
+    ok 4 - draft revision, persistence, locale independence, and submission idempotency
+      ---
+      duration_ms: 107.350445
+      ...
+    # Subtest: expiry uses only the saved draft, not a late replacement
+    ok 5 - expiry uses only the saved draft, not a late replacement
+      ---
+      duration_ms: 112.814678
+      ...
+    # Subtest: simultaneous heartbeats cannot double-credit study time
+    ok 6 - simultaneous heartbeats cannot double-credit study time
+      ---
+      duration_ms: 20.607285
+      ...
+    # Subtest: all 12 practice formats return feedback; rubric does not increase mastery evidence
+    ok 7 - all 12 practice formats return feedback; rubric does not increase mastery evidence
+      ---
+      duration_ms: 175.18422
+      ...
+    # Subtest: reference tutor is honest, bilingual, no-match aware, persisted and owner-scoped
+    ok 8 - reference tutor is honest, bilingual, no-match aware, persisted and owner-scoped
+      ---
+      duration_ms: 85.217928
+      ...
+# AI provider request failed: Provider status 503
+    # Subtest: SIMULATED provider: SSE completion, provenance, history/context, failure, truncation, cancellation
+    ok 9 - SIMULATED provider: SSE completion, provenance, history/context, failure, truncation, cancellation
+      ---
+      duration_ms: 1316.823219
+      ...
+    # Subtest: full prerequisite sequence produces genuine isolated-test progress and a certificate
+    ok 10 - full prerequisite sequence produces genuine isolated-test progress and a certificate
+      ---
+      duration_ms: 1681.823155
+      ...
+    # Subtest: review gate, question authoring/versioning, immutable assessed questions, structure validation
+    ok 11 - review gate, question authoring/versioning, immutable assessed questions, structure validation
+      ---
+      duration_ms: 1109.340438
+      ...
+    # Subtest: upload re-encoding, accessible post-build media, metadata editing, attribution, associations
+    ok 12 - upload re-encoding, accessible post-build media, metadata editing, attribution, associations
+      ---
+      duration_ms: 173.745151
+      ...
+    # Subtest: password rotation, export privacy, adaptive practice and persisted profile
+    ok 13 - password rotation, export privacy, adaptive practice and persisted profile
+      ---
+      duration_ms: 246.074392
+      ...
+    # Subtest: recovery tokens are single-use even under simultaneous submissions
+    ok 14 - recovery tokens are single-use even under simultaneous submissions
+      ---
+      duration_ms: 65.097307
+      ...
+    # Subtest: offline content export, dry run, and attributed draft-only import
+    ok 15 - offline content export, dry run, and attributed draft-only import
+      ---
+      duration_ms: 1876.729378
+      ...
+    1..15
+ok 1 - isolated database / API / tutor-provider-contract integration
+  ---
+  duration_ms: 7696.12249
+  ...
+1..1
+# tests 16
+# suites 0
+# pass 16
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 8191.93444
+
+> astroverse-academy@1.0.0 build
+> node scripts/database.mjs generate && next build --webpack
+
+Environment variables loaded from .env
+Prisma schema loaded from prisma/schema.prisma
+
+✔ Generated Prisma Client (v6.19.3) to ./node_modules/@prisma/client in 357ms
+
+Start by importing your Prisma Client (See: https://pris.ly/d/importing-client)
+
+Tip: Interested in query caching in just a few lines of code? Try Accelerate today! https://pris.ly/tip-3-accelerate
+
+▲ Next.js 16.4.3 (webpack)
+- Environments: .env
+⚠ Warning: Next.js ignored package-lock.json in /home/user because it would include your home directory (/home/user).
+ To use this directory, set `outputFileTracingRoot` in your Next.js config.
+
+✓ Running next.config.ts took 69ms
+- Experiments (use with caution):
+  ✓ webpackMemoryOptimizations
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 16.6s
+  Running TypeScript ...
+  Finished TypeScript in 11.5s ...
+  Collecting page data using 1 worker ...
+  Generating static pages using 1 worker (0/2) ...
+✓ Generating static pages using 1 worker (2/2) in 307ms
+  Finalizing page optimization ...
+  Collecting build traces ...
+
+Route (app)
+┌ ○ /_not-found
+├ ƒ /[[...path]]
+└ ƒ /api/[...path]
+
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+

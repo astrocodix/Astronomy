@@ -1,0 +1,19 @@
+
+> astroverse-academy@1.0.0 test:e2e
+> playwright test
+
+
+Running 10 tests using 1 worker
+
+  ✓   1 [chromium] › tests/browser/academy.spec.ts:131:5 › all requested route families load, desktop navigation, no overflow or uncaught error (8.1s)
+  ✓   2 [chromium] › tests/browser/academy.spec.ts:166:5 › persistent language / theme, unchanged learner identity, mobile and tablet RTL layouts (4.7s)
+  ✓   3 [chromium] › tests/browser/academy.spec.ts:208:5 › lesson teaches, accessible bookmark / explanation levels / sources / search (2.0s)
+  ✓   4 [chromium] › tests/browser/academy.spec.ts:230:5 › all 12 question controls submit server-scored feedback, including complete matching solutions (3.5s)
+  ✓   5 [chromium] › tests/browser/academy.spec.ts:268:5 › exam autosave survives reload and locale change, hides solutions, and records submission (1.9s)
+  ✓   6 [chromium] › tests/browser/academy.spec.ts:304:5 › reference tutor provenance, history, delete confirmation and honest no-match (1.7s)
+  ✓   7 [chromium] › tests/browser/academy.spec.ts:336:5 › observatory interactions and attributed archive (1.6s)
+  ✓   8 [chromium] › tests/browser/academy.spec.ts:361:5 › registration, preferences, logout/login and protected editorial controls (3.8s)
+  ✓   9 [chromium] › tests/browser/academy.spec.ts:405:5 › narrow English and Arabic dark layouts, keyboard navigation and complex question formats (3.7s)
+  ✓  10 [chromium] › tests/browser/academy.spec.ts:441:5 › WCAG automated audit: representative routes, light/dark and Arabic mobile (29.9s)
+
+  10 passed (1.0m)

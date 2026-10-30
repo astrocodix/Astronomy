@@ -1,0 +1,33 @@
+{
+  "checkedAt": "2026-10-30T09:03:23.850343+00:00",
+  "passed": true,
+  "scope": "Fresh extraction of the source archive into an isolated directory, with a separate node_modules and fresh SQLite database. No existing learner database/build output was used.",
+  "commands": [
+    "npm ci",
+    "cp .env.example .env",
+    "npm run setup",
+    "npm run typecheck",
+    "npm test",
+    "npm run build"
+  ],
+  "results": {
+    "install": "passed",
+    "migrations": 5,
+    "seed": {
+      "stages": 12,
+      "modules": 146,
+      "lessons": 16,
+      "questions": 864,
+      "examTemplates": 57
+    },
+    "standaloneTypecheck": "passed before first build",
+    "unitTests": 14,
+    "integrationScenarios": 15,
+    "integrationNodeTestCountIncludingParent": 16,
+    "productionBuild": "passed"
+  },
+  "notes": [
+    "The enclosing workspace package-lock warning is specific to this nested validation directory, not a build failure.",
+    "Live provider/mail and public deployment were not tested."
+  ]
+}

@@ -1,0 +1,17 @@
+
+> astroverse-academy@1.0.0 content:validate
+> tsx scripts/validate-content.ts
+
+{
+  "passed": true,
+  "lessons": 16,
+  "questions": 864,
+  "modules": 8,
+  "errors": [],
+  "warnings": [
+    "Content is an authored pilot pending independent scientific and Arabic editorial review.",
+    "The 864 records include concept variants; they are not 864 independently reviewed concepts.",
+    "Stages 2–12 are a complete roadmap, not completed course content.",
+    "Link accessibility does not establish a license or independently verify every scientific claim."
+  ]
+}

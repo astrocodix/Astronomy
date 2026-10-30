@@ -1,0 +1,192 @@
+
+> astroverse-academy@1.0.0 test
+> npm run test:unit && npm run test:integration
+
+
+> astroverse-academy@1.0.0 test:unit
+> tsx --test tests/core.test.ts
+
+TAP version 13
+# Subtest: roadmap has 12 stages and 146 genuine module titles
+ok 1 - roadmap has 12 stages and 146 genuine module titles
+  ---
+  duration_ms: 0.793683
+  ...
+# Subtest: all 16 bilingual lessons have substantial teaching and activities
+ok 2 - all 16 bilingual lessons have substantial teaching and activities
+  ---
+  duration_ms: 3.717805
+  ...
+# Subtest: 864 variants cover all 12 formats and exceed item-count requirements
+ok 3 - 864 variants cover all 12 formats and exceed item-count requirements
+  ---
+  duration_ms: 3.696189
+  ...
+# Subtest: every seed question passes the same schema as CMS imports
+ok 4 - every seed question passes the same schema as CMS imports
+  ---
+  duration_ms: 54.8278
+  ...
+# Subtest: gold answer for every question grades correctly; reasoning stays provisional
+ok 5 - gold answer for every question grades correctly; reasoning stays provisional
+  ---
+  duration_ms: 5.702925
+  ...
+# Subtest: numeric parser accepts requested decimal/scientific and Arabic forms only
+ok 6 - numeric parser accepts requested decimal/scientific and Arabic forms only
+  ---
+  duration_ms: 0.72164
+  ...
+# Subtest: sets, order and matching reject duplicates, extra keys, and coercion
+ok 7 - sets, order and matching reject duplicates, extra keys, and coercion
+  ---
+  duration_ms: 0.221917
+  ...
+# Subtest: Arabic text normalization supports diacritics without discarding meaning
+ok 8 - Arabic text normalization supports diacritics without discarding meaning
+  ---
+  duration_ms: 0.167565
+  ...
+# Subtest: unsubmitted shape never includes answer, explanation, option order, or arbitrary private data
+ok 9 - unsubmitted shape never includes answer, explanation, option order, or arbitrary private data
+  ---
+  duration_ms: 16.538496
+  ...
+# Subtest: balanced selection has no repeated records and honors 30/40/30 when possible
+ok 10 - balanced selection has no repeated records and honors 30/40/30 when possible
+  ---
+  duration_ms: 1.981743
+  ...
+# Subtest: balanced selection handles shortages without duplicate IDs
+ok 11 - balanced selection handles shortages without duplicate IDs
+  ---
+  duration_ms: 0.263637
+  ...
+# Subtest: selection favors unseen independent concepts, shuffle never mutates input
+ok 12 - selection favors unseen independent concepts, shuffle never mutates input
+  ---
+  duration_ms: 0.392524
+  ...
+# Subtest: mastery is regularized and latest distinct-concept evidence wins
+ok 13 - mastery is regularized and latest distinct-concept evidence wins
+  ---
+  duration_ms: 0.675963
+  ...
+# Subtest: CMS validator rejects answer/type mismatches and missing image provenance
+ok 14 - CMS validator rejects answer/type mismatches and missing image provenance
+  ---
+  duration_ms: 0.764262
+  ...
+1..14
+# tests 14
+# suites 0
+# pass 14
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 501.578571
+
+> astroverse-academy@1.0.0 test:integration
+> tsx --test tests/integration.test.ts
+
+TAP version 13
+# Subtest: isolated database / API / tutor-provider-contract integration
+    # Subtest: health, real initial counts, guest sessions, RBAC, and request origin
+    ok 1 - health, real initial counts, guest sessions, RBAC, and request origin
+      ---
+      duration_ms: 149.379027
+      ...
+    # Subtest: registration preserves progress identity and rejects injected roles
+    ok 2 - registration preserves progress identity and rejects injected roles
+      ---
+      duration_ms: 79.545626
+      ...
+# prisma:error 
+# Invalid `db.examAttempt.create()` invocation in
+# /home/user/src/lib/exams.ts:151:36
+#   148   : null;
+#   149 let attempt;
+#   150 try {
+# → 151   attempt = await db.examAttempt.create(
+# Unique constraint failed on the fields: (`userId`)
+    # Subtest: quick examination is balanced, answer-free, resumable, and owner-scoped
+    ok 3 - quick examination is balanced, answer-free, resumable, and owner-scoped
+      ---
+      duration_ms: 147.614451
+      ...
+    # Subtest: draft revision, persistence, locale independence, and submission idempotency
+    ok 4 - draft revision, persistence, locale independence, and submission idempotency
+      ---
+      duration_ms: 120.389995
+      ...
+    # Subtest: expiry uses only the saved draft, not a late replacement
+    ok 5 - expiry uses only the saved draft, not a late replacement
+      ---
+      duration_ms: 125.488714
+      ...
+    # Subtest: simultaneous heartbeats cannot double-credit study time
+    ok 6 - simultaneous heartbeats cannot double-credit study time
+      ---
+      duration_ms: 22.249679
+      ...
+    # Subtest: all 12 practice formats return feedback; rubric does not increase mastery evidence
+    ok 7 - all 12 practice formats return feedback; rubric does not increase mastery evidence
+      ---
+      duration_ms: 207.142994
+      ...
+    # Subtest: reference tutor is honest, bilingual, no-match aware, persisted and owner-scoped
+    ok 8 - reference tutor is honest, bilingual, no-match aware, persisted and owner-scoped
+      ---
+      duration_ms: 95.409048
+      ...
+# AI provider request failed: Provider status 503
+    # Subtest: SIMULATED provider: SSE completion, provenance, history/context, failure, truncation, cancellation
+    ok 9 - SIMULATED provider: SSE completion, provenance, history/context, failure, truncation, cancellation
+      ---
+      duration_ms: 1340.240664
+      ...
+    # Subtest: full prerequisite sequence produces genuine isolated-test progress and a certificate
+    ok 10 - full prerequisite sequence produces genuine isolated-test progress and a certificate
+      ---
+      duration_ms: 1794.555106
+      ...
+    # Subtest: review gate, question authoring/versioning, immutable assessed questions, structure validation
+    ok 11 - review gate, question authoring/versioning, immutable assessed questions, structure validation
+      ---
+      duration_ms: 1087.22934
+      ...
+    # Subtest: upload re-encoding, accessible post-build media, metadata editing, attribution, associations
+    ok 12 - upload re-encoding, accessible post-build media, metadata editing, attribution, associations
+      ---
+      duration_ms: 171.628901
+      ...
+    # Subtest: password rotation, export privacy, adaptive practice and persisted profile
+    ok 13 - password rotation, export privacy, adaptive practice and persisted profile
+      ---
+      duration_ms: 231.503067
+      ...
+    # Subtest: recovery tokens are single-use even under simultaneous submissions
+    ok 14 - recovery tokens are single-use even under simultaneous submissions
+      ---
+      duration_ms: 66.227578
+      ...
+    # Subtest: offline content export, dry run, and attributed draft-only import
+    ok 15 - offline content export, dry run, and attributed draft-only import
+      ---
+      duration_ms: 1720.725575
+      ...
+    1..15
+ok 1 - isolated database / API / tutor-provider-contract integration
+  ---
+  duration_ms: 7715.2148
+  ...
+1..1
+# tests 16
+# suites 0
+# pass 16
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 8313.700344

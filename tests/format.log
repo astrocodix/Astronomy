@@ -1,0 +1,6 @@
+
+> astroverse-academy@1.0.0 format:check
+> prettier --check "src/**/*.{ts,tsx,css}" "scripts/*.{ts,mjs}" "tests/**/*.ts" "prisma/seed.ts" "*.{ts,json,md}" "docs/*.md"
+
+Checking formatting...
+All matched files use Prettier code style!

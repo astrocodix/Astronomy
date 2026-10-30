@@ -1,0 +1,117 @@
+[
+  {
+    "planet": "mercury",
+    "source": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/mercuryfact.html",
+    "checkedAt": "2026-10-30",
+    "parameters": [
+      "Volumetric mean radius (km) | 2439.7 | 6371.0 | 0.383",
+      "Surface acceleration (eq.) (m/s 2 ) | 3.70 | 9.78 | 0.378",
+      "Semimajor axis (10 6 km) | 57.909 | 149.598 | 0.387",
+      "Sidereal orbit period (days) | 87.969 | 365.256 | 0.241",
+      "Tropical orbit period (days) | 87.968 | 365.242 | 0.241",
+      "Sidereal rotation period (hrs) | 1407.6 | 23.9345 | 58.785",
+      "Semimajor axis (AU) 0.38709893 | Orbital eccentricity 0.20563069 | Orbital inclination (deg) 7.00487 | Longitude of ascending node (deg) 48.33167 | Longitude of perihelion (deg) 77.45645 | Mean Longitude (deg) 252.25084"
+    ]
+  },
+  {
+    "planet": "venus",
+    "source": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/venusfact.html",
+    "checkedAt": "2026-10-30",
+    "parameters": [
+      "Volumetric mean radius (km) | 6051.8 | 6371.0 | 0.950",
+      "Surface acceleration (eq.) (m/s 2 ) | 8.87 | 9.78 | 0.907",
+      "Semimajor axis (10 6 km) | 108.210 | 149.598 | 0.723",
+      "Sidereal orbit period (days) | 224.701 | 365.256 | 0.615",
+      "Tropical orbit period (days) | 224.695 | 365.242 | 0.615",
+      "Sidereal rotation period (hrs) | -5832.6 | 23.9345 | 243.690",
+      "Semimajor axis (AU) 0.72333199 | Orbital eccentricity 0.00677323 | Orbital inclination (deg) 3.39471 | Longitude of ascending node (deg) 76.68069 | Longitude of perihelion (deg) 131.53298 | Mean Longitude (deg) 181.97973"
+    ]
+  },
+  {
+    "planet": "earth",
+    "source": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html",
+    "checkedAt": "2026-10-30",
+    "parameters": [
+      "Volumetric mean radius (km) 6371.000 | Core radius (km) 3485 | Ellipticity (Flattening) 0.003353 | Mean density (kg/m 3 ) 5513 | Surface gravity (mean) (m/s 2 ) 9.820 | Surface acceleration (eq) (m/s 2 ) 9.780",
+      "Surface acceleration (eq) (m/s 2 ) 9.780 | Surface acceleration (pole) (m/s 2 ) 9.832 | Escape velocity (km/s) 11.186 | GM (x 10 6 km 3 /s 2 ) 0.39860 | Bond albedo 0.294 | Geometric albedo 0.434",
+      "Semimajor axis (10 6 km) 149.598 | Sidereal orbit period (days) 365.256 | Tropical orbit period (days) 365.242 | Perihelion (10 6 km) 147.095 | Aphelion (10 6 km) 152.100 | Mean orbital velocity (km/s) 29.78",
+      "Sidereal orbit period (days) 365.256 | Tropical orbit period (days) 365.242 | Perihelion (10 6 km) 147.095 | Aphelion (10 6 km) 152.100 | Mean orbital velocity (km/s) 29.78 | Max. orbital velocity (km/s) 30.29",
+      "Tropical orbit period (days) 365.242 | Perihelion (10 6 km) 147.095 | Aphelion (10 6 km) 152.100 | Mean orbital velocity (km/s) 29.78 | Max. orbital velocity (km/s) 30.29 | Min. orbital velocity (km/s) 29.29",
+      "Sidereal rotation period (hrs) 23.9345 | Length of day (hrs) 24.0000 | Obliquity to orbit (deg) 23.44 | Inclination of equator (deg) 23.44",
+      "Semimajor axis (AU) 1.00000011 | Orbital eccentricity 0.01671022 | Orbital inclination (deg) 0.00005 | Longitude of ascending node (deg) -11.26064 | Longitude of perihelion (deg) 102.94719 | Mean Longitude (deg) 100.46435"
+    ]
+  },
+  {
+    "planet": "mars",
+    "source": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html",
+    "checkedAt": "2026-10-30",
+    "parameters": [
+      "Volumetric mean radius (km) | 3389.5 | 6371.0 | 0.532",
+      "Surface acceleration (eq) (m/s 2 ) | 3.69 | 9.78 | 0.377",
+      "Semimajor axis (10 6 km) | 227.956 | 149.598 | 1.524",
+      "Sidereal orbit period (days) | 686.980 | 365.256 | 1.881",
+      "Tropical orbit period * (days) | 686.972 | 365.242 | 1.881",
+      "Sidereal rotation period (hrs) | 24.6229 | 23.9345 | 1.029",
+      "Semimajor axis (AU) 1.52366231 | Orbital eccentricity 0.09341233 | Orbital inclination (deg) 1.85061 | Longitude of ascending node (deg) 49.57854 | Longitude of perihelion (deg) 336.04084 | Mean Longitude (deg) 355.45332",
+      "Semimajor axis* (km) | 9378 | 23459 | Sidereal orbit period (days)",
+      "Sidereal orbit period (days) | 0.31891 | 1.26244 | Sidereal rotation period (days)",
+      "Sidereal rotation period (days) | 0.31891 | 1.26244 | Orbital inclination (deg)"
+    ]
+  },
+  {
+    "planet": "jupiter",
+    "source": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/jupiterfact.html",
+    "checkedAt": "2026-10-30",
+    "parameters": [
+      "Volumetric mean radius (km) | 69,911 | 6,371.0 | 10.973",
+      "Acceleration (eq., 1 bar) (m/s 2 ) | 23.12 | 9.78 | 2.364",
+      "Semimajor axis (10 6 km) | 778.479 | 149.598 | 5.204",
+      "Sidereal orbit period (days) | 4,332.589 | 365.256 | 11.862",
+      "Tropical orbit period (days) | 4,330.595 | 365.242 | 11.857",
+      "Sidereal rotation period (hrs) | 9.9250* | 23.9345 | 0.415",
+      "Semimajor axis (AU) 5.20336301 | Orbital eccentricity 0.04839266 | Orbital inclination (deg) 1.30530 | Longitude of ascending node (deg) 100.55615 | Longitude of perihelion (deg) 14.75385 | Mean Longitude (deg) 34.40438"
+    ]
+  },
+  {
+    "planet": "saturn",
+    "source": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/saturnfact.html",
+    "checkedAt": "2026-10-30",
+    "parameters": [
+      "Volumetric mean radius (km) | 58,232 | 6,371.0 | 9.140",
+      "Acceleration (eq., 1 bar) (m/s 2 ) | 8.96 | 9.78 | 0.916",
+      "Semimajor axis (10 6 km) | 1,432.041 | 149.598 | 9.573",
+      "Sidereal orbit period (days) | 10,755.699 | 365.256 | 29.447",
+      "Tropical orbit period (days) | 10,746.940 | 365.242 | 29.424",
+      "Sidereal rotation period (hrs) | 10.656* | 23.9345 | 0.445",
+      "Semimajor axis (AU) 9.53707032 | Orbital eccentricity 0.05415060 | Orbital inclination (deg) 2.48446 | Longitude of ascending node (deg) 113.71504 | Longitude of perihelion (deg) 92.43194 | Mean Longitude (deg) 49.94432"
+    ]
+  },
+  {
+    "planet": "uranus",
+    "source": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/uranusfact.html",
+    "checkedAt": "2026-10-30",
+    "parameters": [
+      "Volumetric mean radius (km) | 25,362 | 6,371.0 | 3.981",
+      "Acceleration (eq., 1 bar) (m/s 2 ) | 8.69 | 9.78 | 0.889",
+      "Semimajor axis (10 6 km) | 2,867.043 | 149.598 | 19.165",
+      "Sidereal orbit period (days) | 30,685.400 | 365.256 | 84.011",
+      "Tropical orbit period (days) | 30,588.740 | 365.242 | 83.749",
+      "Sidereal rotation period (hrs) | -17.24* | 23.9345 | 0.720",
+      "Semimajor axis (AU) 19.19126393 | Orbital eccentricity 0.04716771 | Orbital inclination (deg) 0.76986 | Longitude of ascending node (deg) 74.22988 | Longitude of perihelion (deg) 170.96424 | Mean Longitude (deg) 313.23218"
+    ]
+  },
+  {
+    "planet": "neptune",
+    "source": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/neptunefact.html",
+    "checkedAt": "2026-10-30",
+    "parameters": [
+      "Volumetric mean radius (km) | 24,622 | 6,371.0 | 3.865",
+      "Acceleration (eq., 1 bar) (m/s 2 ) | 11.00 | 9.78 | 1.12",
+      "Semimajor axis (10 6 km) | 4,514.953 | 149.598 | 30.178",
+      "Sidereal orbit period (days) | 60,189.018 | 365.256 | 164.79",
+      "Tropical orbit period (days) | 59,799.900 | 365.242 | 163.73",
+      "Sidereal rotation period (hrs) | 16.11* | 23.9345 | 0.673",
+      "Semimajor axis (AU) 30.06896348 | Orbital eccentricity 0.00858587 | Orbital inclination (deg) 1.76917 | Longitude of ascending node (deg) 131.72169 | Longitude of perihelion (deg) 44.97135 | Mean Longitude (deg) 304.88003"
+    ]
+  }
+]

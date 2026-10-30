@@ -1,0 +1,17 @@
+node_modules/
+.next/
+.env
+.env.*.local
+prisma/*.db*
+*.tsbuildinfo
+test-results/
+playwright-report/
+
+.cache/
+backups/
+storage/uploads/
+.env.*
+!.env.example
+*.receipt.json
+
+deliverables/

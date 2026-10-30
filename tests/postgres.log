@@ -1,0 +1,34 @@
+prisma:error 
+Invalid `db.examAttempt.create()` invocation in
+/home/user/src/lib/exams.ts:62:40
+
+  59 const selected = selectQuestions(pool, count, new Set(recent.map(r => r.questionId)));
+  60 const template = templateScope ? await db.examTemplate.findFirst({ where: { kind, ...templateScope }, select: { id: true } }) : null;
+  61 let attempt;
+→ 62 try { attempt = await db.examAttempt.create(
+Unique constraint failed on the fields: (`userId`)
+{
+  "checkedAt": "2026-10-30T08:15:10.486Z",
+  "provider": "PostgreSQL 17.11",
+  "passed": true,
+  "migrations": 5,
+  "stages": 12,
+  "modules": 146,
+  "lessons": 16,
+  "questions": 864,
+  "checks": [
+    "fresh migrations",
+    "full seed",
+    "JSON round trip",
+    "concurrent single-active constraint",
+    "draft revision conflict",
+    "grading and persisted progress",
+    "prerequisite unlock",
+    "reference tutor provenance",
+    "profile persistence"
+  ],
+  "limitations": [
+    "Smoke test, not a high-concurrency load test",
+    "No live AI or mail-provider calls"
+  ]
+}
