@@ -15,3 +15,7 @@ storage/uploads/
 *.receipt.json
 
 deliverables/
+
+# Generated assets and static export for GitHub Pages
+github-pages/public/
+github-pages/out/

@@ -17,3 +17,7 @@ tests/screenshots/
 docs/*.json
 Unselected files/
 deliverables/
+
+github-pages/public/
+github-pages/out/
+github-pages/next-env.d.ts

@@ -24,8 +24,13 @@
     "content:refresh-pilot": "tsx scripts/refresh-pilot.ts",
     "media:download": "python3 scripts/download-images.py",
     "test:browser:prepare": "tsx scripts/prepare-browser-tests.ts",
-    "format": "prettier --write \"src/**/*.{ts,tsx,css}\" \"scripts/*.{ts,mjs}\" \"tests/**/*.ts\" \"prisma/seed.ts\" \"*.{ts,json,md}\" \"docs/*.md\"",
-    "format:check": "prettier --check \"src/**/*.{ts,tsx,css}\" \"scripts/*.{ts,mjs}\" \"tests/**/*.ts\" \"prisma/seed.ts\" \"*.{ts,json,md}\" \"docs/*.md\""
+    "format": "prettier --write \"src/**/*.{ts,tsx,css}\" \"github-pages/**/*.{ts,tsx,css,json}\" \"scripts/*.{ts,mjs}\" \"tests/**/*.{ts,mjs}\" \"prisma/seed.ts\" \"*.{ts,json,md}\" \"docs/*.md\"",
+    "format:check": "prettier --check \"src/**/*.{ts,tsx,css}\" \"github-pages/**/*.{ts,tsx,css,json}\" \"scripts/*.{ts,mjs}\" \"tests/**/*.{ts,mjs}\" \"prisma/seed.ts\" \"*.{ts,json,md}\" \"docs/*.md\"",
+    "pages:dev": "node scripts/prepare-pages.mjs && next dev github-pages --webpack -H 0.0.0.0 -p 3000",
+    "pages:build": "node scripts/prepare-pages.mjs && next build github-pages --webpack && node scripts/finalize-pages.mjs",
+    "test:pages": "node --test tests/pages-export.test.mjs",
+    "pages:serve": "node scripts/serve-pages.mjs",
+    "test:pages:browser": "playwright test -c playwright.pages.config.ts"
   },
   "dependencies": {
     "@prisma/client": "6.19.3",

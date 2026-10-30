@@ -15,12 +15,12 @@ DESTINATION.mkdir(exist_ok=True)
 ARCHIVE = DESTINATION / 'astroverse-academy-source.zip'
 TOP = [
     'README.md', 'package.json', 'package-lock.json', 'tsconfig.json',
-    'next.config.ts', 'next-env.d.ts', 'playwright.config.ts', '.env.example',
+    'next.config.ts', 'next-env.d.ts', 'playwright.config.ts', 'playwright.pages.config.ts', '.env.example',
     '.gitignore', '.prettierrc.json', '.prettierignore',
 ]
-DIRECTORIES = ['src', 'scripts', 'prisma', 'public', 'docs']
+DIRECTORIES = ['src', 'scripts', 'prisma', 'public', 'docs', 'github-pages', '.github']
 TEST_FILES = [
-    'tests/core.test.ts', 'tests/integration.test.ts', 'tests/postgres-smoke.ts',
+    'tests/core.test.ts', 'tests/integration.test.ts', 'tests/postgres-smoke.ts', 'tests/pages-export.test.mjs',
     'tests/test.log', 'tests/build.log', 'tests/typecheck.log', 'tests/format.log',
     'tests/content-validation.log', 'tests/browser.log', 'tests/browser-report.json',
     'tests/browser-findings.json', 'tests/postgres.log', 'tests/postgres-report.json',
@@ -37,6 +37,8 @@ def permitted(path):
     name = path.name
     if any(part in EXCLUDED_PARTS for part in rel.parts):
         return False
+    if rel.parts[:2] in (('github-pages', 'public'), ('github-pages', 'out')):
+        return False
     if name.startswith('.env') and name != '.env.example':
         return False
     if re.search(r'\.db(?:[-.].*)?$', name) or name.endswith(('.receipt.json', '.pgdump', '.tsbuildinfo')):
@@ -44,7 +46,7 @@ def permitted(path):
     return path.is_file() and not path.is_symlink()
 
 files = {ROOT / name for name in TOP + TEST_FILES if (ROOT / name).is_file()}
-for directory in DIRECTORIES + ['tests/browser', 'tests/screenshots']:
+for directory in DIRECTORIES + ['tests/browser', 'tests/pages', 'tests/screenshots']:
     for path in (ROOT / directory).rglob('*'):
         if permitted(path):
             files.add(path)
