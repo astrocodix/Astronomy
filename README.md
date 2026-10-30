@@ -26,7 +26,7 @@ This repository also includes a separate **static preview** for GitHub Pages, ex
 
 Reading marks, language, and theme are stored in the browser when available; marks are not assessments and do not sync. GitHub Pages cannot run the database or API, so **accounts, synced progress, exams, certificates, AI tutor, uploads, and the content studio are unavailable** in this edition. It builds from the authored files in `src/content/`, not edits made in a running content studio. The original server-backed application remains unchanged and can be deployed separately.
 
-To publish, set **Settings → Pages → Build and deployment → Source** to **GitHub Actions**. The workflow in `.github/workflows/pages.yml` builds and deploys on pushes to `main`; it also accepts the current Arena working branch for the initial publication. Once merged, future changes to `main` deploy automatically. For a fork, update the tracked branch name if its default branch differs. The workflow derives the correct repository base path from Pages, including an empty path for a user/organization site or custom domain.
+To publish, set **Settings → Pages → Build and deployment → Source** to **GitHub Actions**. The workflow in `.github/workflows/pages.yml` verifies pull requests to `main` and builds and deploys pushes to `main`. Future changes to `main` deploy automatically. For a fork, update the tracked branch name if its default branch differs. The workflow derives the correct repository base path from Pages, including an empty path for a user/organization site or custom domain.
 
 To build and inspect the project-site export locally without a database:
 

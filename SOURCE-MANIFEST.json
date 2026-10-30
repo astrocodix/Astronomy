@@ -1,6 +1,6 @@
 {
   "project": "ASTROVERSE ACADEMY",
-  "createdAt": "2026-10-30T09:53:11.702751+00:00",
+  "createdAt": "2026-10-30T09:59:19.449569+00:00",
   "scope": "Source, authored pilot, cached media/fonts, docs and scoped verification evidence. No credentials, learner database, backups, runtime uploads, dependencies or build output.",
   "files": [
     {
@@ -10,8 +10,8 @@
     },
     {
       "path": ".github/workflows/pages.yml",
-      "bytes": 1545,
-      "sha256": "233a7391d5e8719c938a1b0381fbdd76948323a57679234012079b42c9f460a2"
+      "bytes": 1627,
+      "sha256": "5ab78bfa2da0d4a452927bb6b69da4c23365ea9a4fe5e672381f1de864a47b36"
     },
     {
       "path": ".gitignore",
@@ -30,8 +30,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 13474,
-      "sha256": "b06d1a396841898ae47526c3c8b511c7cd1d9ed04fe7de93f964e90a7eb1df0a"
+      "bytes": 13417,
+      "sha256": "8c0432cb2bf7e5239a3501fb2b0fd0992deae2022fcb031e3480402e90f1843d"
     },
     {
       "path": "docs/CONTENT.md",
@@ -40,8 +40,8 @@
     },
     {
       "path": "docs/DEPLOYMENT.md",
-      "bytes": 13618,
-      "sha256": "7d740525d0b5adb73500aa7823d4cd59c5c385bb99cc7a42cec044affcaebbd3"
+      "bytes": 13605,
+      "sha256": "7c28e13346d64053fde910734f3b60fc734a8508d8f20b2439cf3a7c91d73773"
     },
     {
       "path": "docs/SECURITY.md",
